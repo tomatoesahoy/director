@@ -1,0 +1,252 @@
+<div class="director-extension-settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <div class="flex-container alignitemscenter margin0">
+                <input type="checkbox" id="extension_enabled" style="margin-right: 5px;">
+                <b id="extension_title" data-i18n="ext_dir_title">Director</b>
+                <i id="directorExtensionPopoutButton" class="fa-solid fa-window-restore menu_button margin0" style="margin-left: 5px; cursor: pointer;"></i>
+            </div>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <div id="directorExtensionDrawerContents" class="scrollableInnerFull">
+                <!-- User Settings -->
+                <div class="director-extension_block flex-container collapsible" data-target="user_settings_container">
+                    <input id="user_button" class="menu_button" type="submit" value="User" />
+                </div>
+
+                <div class="director-extension_block flex-container content" id="user_settings_container" style="display: none;">
+                    <table>
+                        <tr>
+                            <td><label for="userClothes">Clothes</label></td>
+                            <td>
+                                <select id="userClothes">
+                                    <option value="Disabled">Disabled</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="userUndies">Undies</label></td>
+                            <td>
+                                <select id="userUndies">
+                                    <option value="Disabled">Disabled</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="userHair">Hair</label></td>
+                            <td>
+                                <select id="userHair">
+                                    <option value="Disabled">Disabled</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="userMakeup">Makeup</label></td>
+                            <td>
+                                <select id="userMakeup">
+                                    <option value="Disabled">Disabled</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="userMood">Mood</label></td>
+                            <td>
+                                <select id="userMood">
+                                    <option value="Disabled">Disabled</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <hr class="sysHR" />
+
+                <!-- Char Settings -->
+                <div class="director-extension_block flex-container collapsible" data-target="char_settings_container">
+                    <input id="char_button" class="menu_button" type="submit" value="Char" />
+                </div>
+
+                <div class="director-extension_block flex-container content" id="char_settings_container" style="display: none;">
+                    <table>
+                        <tr>
+                            <td><label for="charClothes">Clothes</label></td>
+                            <td>
+                                <select id="charClothes">
+                                    <option value="Disabled">Disabled</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="charUndies">Undies</label></td>
+                            <td>
+                                <select id="charUndies">
+                                    <option value="Disabled">Disabled</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="charHair">Hair</label></td>
+                            <td>
+                                <select id="charHair">
+                                    <option value="Disabled">Disabled</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="charMakeup">Makeup</label></td>
+                            <td>
+                                <select id="charMakeup">
+                                    <option value="Disabled">Disabled</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="charMood">Mood</label></td>
+                            <td>
+                                <select id="charMood">
+                                    <option value="Disabled">Disabled</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <hr class="sysHR" />
+
+                <!-- World Settings -->
+                <div class="director-extension_block flex-container collapsible" data-target="world_settings_container">
+                    <input id="world_button" class="menu_button" type="submit" value="World" />
+                </div>
+
+				<div class="director-extension_block flex-container content" id="world_settings_container" style="display: none;">
+					<table id="world_settings_table">
+						<tr>
+							<td><label for="location">Location</label></td>
+							<td>
+								<select id="location">
+									<option value="Disabled">Disabled</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+                <hr class="sysHR" />
+
+                <!-- Notes Settings -->
+                <div class="director-extension_block flex-container collapsible" data-target="notes_settings_container">
+                    <input id="notes_button" class="menu_button" type="submit" value="Notes" />
+                </div>
+
+                <div class="director-extension_block flex-container content" id="notes_settings_container" style="display: none;">
+                    <textarea id="notes" rows="5" cols="50"></textarea>
+                </div>
+
+                <hr class="sysHR" />
+
+                <!-- Preview Settings -->
+                <div class="director-extension_block flex-container collapsible" data-target="preview_settings_container" style="display: flex; align-items: center;">
+                    <input id="preview_button" class="menu_button" type="submit" value="Preview" />
+                    <span id="prompt_preview_token_counter" style="margin-left: auto;">Tokens: 0</span>
+                </div>
+
+                <div class="director-extension_block flex-container content" id="preview_settings_container" style="display: none; margin-top: 0; padding-top: 0;">
+                    <textarea id="promptPreview" rows="5" cols="50" readonly style="width: 100%;"></textarea>
+                </div>
+
+                <hr class="sysHR" />
+
+                <!-- Lorebooks Settings -->
+                <div class="director-extension_block flex-container collapsible" data-target="lorebooks_settings_container">
+                    <input id="lorebooks_button" class="menu_button" type="submit" value="Lorebooks" />
+                </div>
+
+                <div class="director-extension_block flex-container content" id="lorebooks_settings_container" style="display: none;">
+                    <table>
+                        <tr>
+                            <td><label for="clothesLorebook">Clothes</label></td>
+                            <td>
+                                <select id="clothesLorebook">
+                                    <option value="Disabled">Disabled</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="undiesLorebook">Undies</label></td>
+                            <td>
+                                <select id="undiesLorebook">
+                                    <option value="Disabled">Disabled</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="hairLorebook">Hair</label></td>
+                            <td>
+                                <select id="hairLorebook">
+                                    <option value="Disabled">Disabled</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="makeupLorebook">Makeup</label></td>
+                            <td>
+                                <select id="makeupLorebook">
+                                    <option value="Disabled">Disabled</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="locationsLorebook">Location</label></td>
+                            <td>
+                                <select id="locationsLorebook">
+                                    <option value="Disabled">Disabled</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="worldLorebook">World</label></td>
+                            <td>
+                                <select id="worldLorebook">
+                                    <option value="Disabled">Disabled</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <hr class="sysHR" />
+
+                <!-- Chat Settings -->
+                <div class="director-extension_block flex-container collapsible" data-target="chat_settings_container">
+                    <input id="chat_button" class="menu_button" type="submit" value="Chat" />
+                </div>
+
+                <div class="director-extension_block flex-container content" id="chat_settings_container" style="display: none;">
+                    <div class="floating_prompt_radio_group">
+                        <label class="checkbox_label" for="chat_position_before">
+                            <input type="radio" id="chat_position_before" name="chat_position" value="2" />
+                            <span>Before Main Prompt / Story String</span>
+                        </label>
+                        <label class="checkbox_label" for="chat_position_after">
+                            <input type="radio" id="chat_position_after" name="chat_position" value="0" />
+                            <span>After Main Prompt / Story String</span>
+                        </label>
+                        <label class="checkbox_label alignItemsCenter" for="chat_position_depth">
+                            <input type="radio" id="chat_position_depth" name="chat_position" value="1" />
+                            <span>In-chat @ Depth</span>
+                            <input id="chat_depth" class="text_pole textarea_compact widthNatural" type="number" min="0" max="999" />
+                            <span>as</span>
+                            <select id="chat_role" class="text_pole widthNatural">
+                                <option value="0">System</option>
+                                <option value="1">User</option>
+                                <option value="2">Assistant</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
