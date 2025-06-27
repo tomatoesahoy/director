@@ -1,13 +1,21 @@
-# Director
+![screenshot](director.jpg)
 
-This addon aims to give you control over clothes, locations and other world info that AI might often forget about between turns. It adds quick selection for user created outfits for both user/char as well as other world settings.
+# About
 
-### Usage
+Director is an addon for Silly Tavern that aims to give you quicker control over custom things like clothing, locations, world info such as time of day and weather. Your chosen settings are injected into the prompt each time you remind the AI of those details. By injecting constant reminders of what a character is wearing or where they it helps the AI remain consistent.
 
-Create a lorebook in world info for clothes, add some things to it, then select that lorebook from the option within the addon. Your clothes menu will populate will all of your lorebook settings. The same works for undies, makeup.
+# Install
 
-World settings are a bit different, you can modify them. They work on the basic principle of "The <label> is <secondary label>" that gets injected to the AI. This lets you have a setting like "time of day" and then "evening" as an option, so what gets injected is "The time of day is evening." Since that setting works like that, anything you add to it will pop up in the 'world' section. I have included a number of defaults like weather, time of day, season.
+Paste the address into ST's extension menu. After installing, the addon will show up in the extensions dropdown. You can use it within the extensions menu or click the pop-out button.
 
-### Recommended settings
+# Usage
 
-Make sure chat depth is set to 3, so it is just under author notes (4).
+Create lorebooks for settings you intend use such as "clothing" or "locations". Create entries within the lorebook to describe your clothing or setting. After creating a lorebook, at the bottom of the Director addon is a 'Lorebooks' section where you associate your new lorebook with a setting. Once set, the popups for user/char will populate accordingly. Then you can select an option and it will be injected into the AI prompt next time.
+
+# World
+
+There is a default 'director_world' lorebook included with the install (should be located at st\public\scripts\extensions\third-party\Director). Import it to your ST. World settings read a bit different and offer custom creation of settings. Example: creating a setting called 'year', with an entry that says '2005, 2006, 2006' will fill the dropdowns with those years, note they are seperated by a comma. All of the settings under world work this way and get injected like: 'The year is 2005' where 'year' is the lorebook entry and '2005' is one of the contents. 
+
+# Chat
+
+I recommend leaving the injection point as depth 3 in chat, so it is one below author notes (4 by default).
