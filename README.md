@@ -14,7 +14,9 @@ Create lorebooks for settings you intend use such as "clothing" or "locations". 
 
 # World
 
-There is a default 'director_world' lorebook included with the install (should be located at st\public\scripts\extensions\third-party\Director). Import it to your ST. World settings read a bit different and offer custom creation of settings. Example: creating a setting called 'year', with an entry that says '2005, 2006, 2006' will fill the dropdowns with those years, note they are seperated by a comma. All of the settings under world work this way and get injected like: 'The year is 2005' where 'year' is the lorebook entry and '2005' is one of the contents. 
+There is a default 'director_world' lorebook included with the install (should be located at st\public\scripts\extensions\third-party\Director). Import it to your ST. World settings read a bit different and offer custom creation of settings. Example: creating a setting called 'year', with an entry that says '2005, 2006, 2006' will fill the dropdowns with those years, note they are seperated by a comma. All of the settings under world work this way and get injected like: 'The year is 2005' where 'year' is the lorebook entry and '2005' is one of the contents.
+
+'Mood' is the only exception to the world book in that options for it are held in the world lorebook, but appear under both user/char sections.
 
 # Chat
 
